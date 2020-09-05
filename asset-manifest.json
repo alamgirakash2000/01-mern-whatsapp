@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/01-mern-whatsapp/static/css/main.5f361e03.chunk.css",
+    "main.js": "/01-mern-whatsapp/static/js/main.b03d549a.chunk.js",
+    "main.js.map": "/01-mern-whatsapp/static/js/main.b03d549a.chunk.js.map",
+    "runtime-main.js": "/01-mern-whatsapp/static/js/runtime-main.a56e8913.js",
+    "runtime-main.js.map": "/01-mern-whatsapp/static/js/runtime-main.a56e8913.js.map",
+    "static/js/2.c24a221a.chunk.js": "/01-mern-whatsapp/static/js/2.c24a221a.chunk.js",
+    "static/js/2.c24a221a.chunk.js.map": "/01-mern-whatsapp/static/js/2.c24a221a.chunk.js.map",
+    "index.html": "/01-mern-whatsapp/index.html",
+    "precache-manifest.a3ec5cdc08ef22a26a49bb54f51ec567.js": "/01-mern-whatsapp/precache-manifest.a3ec5cdc08ef22a26a49bb54f51ec567.js",
+    "service-worker.js": "/01-mern-whatsapp/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/01-mern-whatsapp/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.c24a221a.chunk.js.LICENSE.txt": "/01-mern-whatsapp/static/js/2.c24a221a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/01-mern-whatsapp/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a56e8913.js",
+    "static/js/2.c24a221a.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.b03d549a.chunk.js"
+  ]
+}
