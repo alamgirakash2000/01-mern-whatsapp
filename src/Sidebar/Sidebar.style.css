@@ -1,0 +1,28 @@
+.sidebar {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__header {
+  border-bottom: 1px solid gray;
+  margin-top: 4px;
+}
+.sidebar__search {
+  background-color: white;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+.sidebar__search input {
+  border: none;
+}
+
+.search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.sidebar__chats {
+  height: 100%;
+  overflow: auto;
+}
