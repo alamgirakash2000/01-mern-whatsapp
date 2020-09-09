@@ -141,18 +141,21 @@ export default function Login() {
                 autoComplete="off"
               >
                 <TextField
-                  id="outlined-basic"
+                  id="outlined-error-helper-text"
                   label="Enter email"
                   type="email"
+                  error={!email.includes("@") && !email.includes(".")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   variant="outlined"
                   className="form-control mt-2"
                 />
                 <TextField
-                  id="outlined-basic"
+                  error={password.length < 6}
+                  id="outlined-error-helper-text"
                   label="Enter password (at least 6 character)"
                   type="password"
+                  helperText="Must be at least 6 character"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   variant="outlined"
@@ -189,16 +192,19 @@ export default function Login() {
                 autoComplete="off"
               >
                 <TextField
-                  id="outlined-basic"
+                  error={name.length < 3}
+                  id="outlined-error-helper-text"
                   label="Enter your name"
                   type="text"
+                  helperText="Must be at least 3 characters"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   variant="outlined"
                   className="form-control my-5"
                 />
                 <TextField
-                  id="outlined-basic"
+                  error={!email.includes("@") && !email.includes(".")}
+                  id="outlined-error-helper-text"
                   label="Enter email"
                   type="email"
                   value={email}
@@ -207,9 +213,11 @@ export default function Login() {
                   className="form-control mt-2"
                 />
                 <TextField
-                  id="outlined-basic"
-                  label="Enter password (at least 6 character)"
+                  id="outlined-error-helper-text"
+                  helperText="Must be at least 6 character"
+                  label="Enter password"
                   type="password"
+                  error={password.length < 6}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   variant="outlined"

@@ -37,7 +37,8 @@ function SidebarChat({ user }) {
       <div className="sidebarChat__info">
         <h5 className="m-0 p-0">{user.name}</h5>
         <p className="m-0 p-0">
-          {lastMsg.sender === user.id ? "You" : lastMsg.name} :{lastMsg.message}
+          {lastMsg.sender === user.id ? lastMsg.name : "You"} :{" "}
+          {lastMsg.message}
         </p>
       </div>
       <div className="ml-auto">
