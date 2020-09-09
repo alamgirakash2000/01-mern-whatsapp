@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f742cca0950ee3df624bef5dcbd21e1",
+    "revision": "2178bd07fdac1c8b962552d65b1b2e9c",
     "url": "/01-mern-whatsapp/index.html"
   },
   {
-    "revision": "dc435e478fa0c9d30f29",
-    "url": "/01-mern-whatsapp/static/css/main.35d6f3a1.chunk.css"
+    "revision": "e8035b1c79d477395905",
+    "url": "/01-mern-whatsapp/static/css/main.6bdde320.chunk.css"
   },
   {
     "revision": "5c6889bd73d1be99add2",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/01-mern-whatsapp/static/js/2.a4c5ddab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc435e478fa0c9d30f29",
-    "url": "/01-mern-whatsapp/static/js/main.999a7143.chunk.js"
+    "revision": "e8035b1c79d477395905",
+    "url": "/01-mern-whatsapp/static/js/main.96485595.chunk.js"
   },
   {
     "revision": "084a7a7848a67ff07e88",
