@@ -8,9 +8,10 @@ import axios from "../axios";
 import { useStateValue } from "../ContextApi/StateProvider";
 
 export const Sidebar = () => {
-  const [{ users, user }, dispatch] = useStateValue();
+  const [{ users, user, myMessages }, dispatch] = useStateValue();
   const [searchInput, setSearchInput] = useState("");
-  const [myUsers, setMyuUsers] = useState([]);
+  const [myUsers, setMyUsers] = useState([]);
+  const [lastMsg, setLastMsg] = useState("");
 
   useEffect(() => {
     const getAllUsers = async () => {
@@ -24,6 +25,18 @@ export const Sidebar = () => {
             ),
         });
       });
+
+      await setMyUsers(
+        users?.map((user) => {
+          myMessages.map((msg) => {
+            if (msg.sender === user.id) {
+              setLastMsg(msg);
+            }
+          });
+
+          return { ...user, lastMsg };
+        })
+      );
     };
     getAllUsers();
   }, [user, searchInput]);
@@ -60,7 +73,8 @@ export const Sidebar = () => {
         />
       </div>
       <div className="sidebar__chats bg-white">
-        {users?.map((user) => (
+        {console.log(myUsers)}
+        {myUsers?.map((user) => (
           <SidebarChat key={user.id} user={user} />
         ))}
       </div>
